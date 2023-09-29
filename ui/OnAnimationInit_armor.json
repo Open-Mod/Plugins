@@ -1,0 +1,14 @@
+{
+  "name": "On Animation Init",
+  "category": "Events",
+  "for": "armor",
+  "properties": [],
+  "inputs": [],
+  "outputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Armor <Item>", "type": "item" },
+    { "name": "State <AnimationState>", "type": "animationstate" }
+  ],
+  "showInContext": false,
+  "plugin": "OnAnimationInit"
+}

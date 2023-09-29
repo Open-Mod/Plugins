@@ -1,0 +1,16 @@
+{
+  "name": "Boolean",
+  "category": "Variables",
+  "properties": [
+    {
+      "name": "Boolean",
+      "type": "combo",
+      "values": [true, false],
+      "value": true
+    }
+  ],
+  "inputs": [],
+  "outputs": [{ "name": "Boolean <Boolean>", "type": "boolean" }],
+  "showInContext": true,
+  "plugin": "Boolean"
+}

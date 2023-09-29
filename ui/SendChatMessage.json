@@ -1,0 +1,12 @@
+{
+  "name": "Send Chat Message",
+  "category": "Chat",
+  "properties": [],
+  "inputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Text <String>", "type": "string" }
+  ],
+  "outputs": [{ "name": "connector", "type": "connector" }],
+  "showInContext": true,
+  "plugin": "SendChatMessage"
+}

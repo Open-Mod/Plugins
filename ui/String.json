@@ -1,0 +1,11 @@
+{
+  "name": "String",
+  "category": "Variables",
+  "properties": [
+    { "name": "String", "type": "text", "value": "" }
+  ],
+  "inputs": [],
+  "outputs": [{ "name": "String <String>", "type": "string" }],
+  "showInContext": true,
+  "plugin": "String"
+}

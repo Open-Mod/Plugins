@@ -1,0 +1,13 @@
+{
+  "name": "Get Entity Position",
+  "category": "Variables",
+  "properties": [],
+  "inputs": [{ "name": "Entity <Entity>", "type": "entity" }],
+  "outputs": [
+    { "name": "X <Number>", "type": "Number" },
+    { "name": "Y <Number>", "type": "Number" },
+    { "name": "Z <Number>", "type": "Number" }
+  ],
+  "showInContext": true,
+  "plugin": "GetEntityPosition"
+}

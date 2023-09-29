@@ -1,0 +1,15 @@
+{
+  "name": "If",
+  "category": "Conditions",
+  "properties": [],
+  "inputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Condition <Boolean>", "type": "boolean" }
+  ],
+  "outputs": [
+    { "name": "true <Connector>", "type": "connector" },
+    { "name": "false <Connector>", "type": "connector" }
+  ],
+  "showInContext": true,
+  "plugin": "If"
+}

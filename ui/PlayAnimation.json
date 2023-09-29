@@ -1,0 +1,18 @@
+{
+  "name": "Play Animation",
+  "category": "Animations",
+  "properties": [{
+    "name": "Type",
+    "type": "combo",
+    "values": ["Loop", "Play Once"],
+    "value": "Loop"
+  }],
+  "inputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Name <String>", "type": "string" },
+    { "name": "State <AnimationState>", "type": "animationstate" }
+  ],
+  "outputs": [{ "name": "connector", "type": "connector" }],
+  "showInContext": true,
+  "plugin": "PlayAnimation"
+}

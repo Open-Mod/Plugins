@@ -1,0 +1,11 @@
+{
+  "name": "Number",
+  "category": "Variables",
+  "properties": [
+    { "name": "Number", "type": "number", "value": 0, "step": 0.1 }
+  ],
+  "inputs": [],
+  "outputs": [{ "name": "Number <Number>", "type": "number" }],
+  "showInContext": true,
+  "plugin": "Number"
+}

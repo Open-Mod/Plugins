@@ -1,0 +1,18 @@
+{
+  "name": "On Break",
+  "category": "Events",
+  "for": "block",
+  "properties": [],
+  "inputs": [],
+  "outputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Block <Block>", "type": "block" },
+    { "name": "Level <Level>", "type": "level" },
+    { "name": "Player <Entity>", "type": "entity" },
+    { "name": "X <Number>", "type": "number" },
+    { "name": "Y <Number>", "type": "number" },
+    { "name": "Z <Number>", "type": "number" }
+  ],
+  "showInContext": false,
+  "plugin": "OnBreak"
+}
