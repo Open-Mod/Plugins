@@ -17,8 +17,8 @@ public class Explode {
         double Y = ((java.lang.Number) node.getInputData("Y <Number>")).doubleValue();
         double Z = ((java.lang.Number) node.getInputData("Z <Number>")).doubleValue();
         float radius = ((java.lang.Number) node.getInputData("Radius <Number>")).floatValue();
-        boolean withFire = (boolean) node.getInputData("With Fire?");
-        boolean destroyBlocks = (boolean) node.getInputData("Destroy Blocks?");
+        boolean withFire = (boolean) node.getInputData("With Fire? <Boolean>");
+        boolean destroyBlocks = (boolean) node.getInputData("Destroy Blocks? <Boolean>");
         if(destroyBlocks) level.explode(null, X, Y, Z, radius, withFire, Level.ExplosionInteraction.TNT);
         else level.explode(null,X, Y, Z, radius, withFire, Level.ExplosionInteraction.NONE);
         node.TriggerNext("connector");
