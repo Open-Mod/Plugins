@@ -10,7 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Map;
 
 public class SendChatMessage {
-    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
+    public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
         java.lang.String text = (java.lang.String) node.getInputData("Text <String>");
         Minecraft.getInstance().player.sendSystemMessage(Component.literal(text));
         node.TriggerNext("connector");

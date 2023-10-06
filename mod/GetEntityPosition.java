@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Map;
 
 public class GetEntityPosition {
-    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject itemObj) {
+    public static void execute(IEventBus bus, Node node, RegistryObject itemObj) {
         Map properties = (Map) node.data.get("properties");
         Entity entity = (Entity) node.getInputData("Entity <Entity>");
         if(entity == null) return;

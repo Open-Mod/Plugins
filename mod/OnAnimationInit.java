@@ -12,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 import software.bernie.geckolib.core.animation.AnimationState;
 
 public class OnAnimationInit {
-    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
+    public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
         bus.addListener((event) ->{
             if(event instanceof CustomEvent.AnimationInit) {
                 Item item = itemObj.get();
