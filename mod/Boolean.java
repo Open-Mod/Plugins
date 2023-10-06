@@ -8,7 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Map;
 
 public class Boolean {
-    public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
+    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
         Map properties = (Map) node.data.get("properties");
         java.lang.Boolean bool = (java.lang.Boolean) properties.get("Boolean");
         node.setOutputData("Boolean <Boolean>", bool);

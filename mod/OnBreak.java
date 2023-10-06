@@ -8,7 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 
 public class OnBreak {
-    public static void execute(IEventBus bus, Node node, RegistryObject<Block> blockObj) {
+    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject<Block> blockObj) {
         bus.addListener((event) ->{
             if(event instanceof BlockEvent.BreakEvent) {
                 Block block = blockObj.get();
