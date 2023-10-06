@@ -13,7 +13,11 @@ import java.util.Map;
 
 public class PlayAnimation {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
+=======
+    public static void execute(IEventBus buss, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
+>>>>>>> parent of bc5f1a1 (Update PlayAnimation.java)
 =======
     public static void execute(IEventBus buss, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
 >>>>>>> parent of bc5f1a1 (Update PlayAnimation.java)
