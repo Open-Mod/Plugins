@@ -13,6 +13,7 @@ import java.util.Map;
 
 public class PlayAnimation {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
 =======
 <<<<<<< HEAD
@@ -21,6 +22,9 @@ public class PlayAnimation {
     public static void execute(IEventBus buss, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
 >>>>>>> parent of bc5f1a1 (Update PlayAnimation.java)
 >>>>>>> parent of de5a754 (Update PlayAnimation.java)
+=======
+    public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
+>>>>>>> parent of b86eec3 (fix)
         Map properties = (Map) node.data.get("properties");
         java.lang.String name = (java.lang.String) node.getInputData("Name <String>");
         AnimationState state = (AnimationState) node.getInputData("State <AnimationState>");

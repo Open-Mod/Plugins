@@ -9,7 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Map;
 
 public class Explode {
-    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
+    public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
         Map properties = (Map) node.data.get("properties");
         Level level = (Level) node.getInputData("Level <Level>");
         if(level.isClientSide()) return;
