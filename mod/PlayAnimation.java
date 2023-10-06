@@ -12,7 +12,7 @@ import software.bernie.geckolib.core.animation.RawAnimation;
 import java.util.Map;
 
 public class PlayAnimation {
-    public static void execute(IEventBus, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
+    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
         Map properties = (Map) node.data.get("properties");
         java.lang.String name = (java.lang.String) node.getInputData("Name <String>");
         AnimationState state = (AnimationState) node.getInputData("State <AnimationState>");
