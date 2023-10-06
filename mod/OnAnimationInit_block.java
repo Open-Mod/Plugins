@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 import software.bernie.geckolib.core.animation.AnimationState;
 
 public class OnAnimationInit_block {
-    public static void execute(IEventBus bus, Node node, RegistryObject<Block> blockObj) {
+    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject<Block> blockObj) {
         bus.addListener((event) ->{
             if(event instanceof CustomEvent.AnimationInit) {
                 Block block = blockObj.get();

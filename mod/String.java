@@ -8,7 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Map;
 
 public class String {
-    public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
+    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
         Map properties = (Map) node.data.get("properties");
         java.lang.String string = (java.lang.String) properties.get("String");
         node.setOutputData("String <String>", string);

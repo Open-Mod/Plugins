@@ -9,7 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 
 public class OnConsume {
-    public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
+    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
         bus.addListener((event) ->{
             if(event instanceof LivingEntityUseItemEvent.Finish) {
                 Item item = itemObj.get();
