@@ -10,7 +10,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 
 public class OnAttack {
-    public static void execute(IEventBus bus, IEventBus sBus, Node node, RegistryObject<Item> itemObj) {
+    public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
         bus.addListener((event) ->{
             if(event instanceof AttackEntityEvent) {
                 Item item = itemObj.get();
