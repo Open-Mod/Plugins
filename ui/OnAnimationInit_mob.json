@@ -10,5 +10,5 @@
     { "name": "State <AnimationState>", "type": "animationstate" }
   ],
   "showInContext": false,
-  "plugin": "OnAnimationInit_Mob"
+  "plugin": "OnAnimationInit_mob"
 }
