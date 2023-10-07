@@ -1,0 +1,14 @@
+{
+  "name": "On Animation Init",
+  "category": "Events",
+  "for": "mob",
+  "properties": [],
+  "inputs": [],
+  "outputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Mob <Entity>", "type": "entity" },
+    { "name": "State <AnimationState>", "type": "animationstate" }
+  ],
+  "showInContext": false,
+  "plugin": "OnAnimationInit_Mob"
+}
