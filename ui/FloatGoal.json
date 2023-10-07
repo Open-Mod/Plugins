@@ -1,0 +1,13 @@
+{
+  "name": "Float Goal",
+  "category": "Mob Goals",
+  "properties": [],
+  "inputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Priority <Number>", "type": "number" },
+    { "name": "Mob <Entity>", "type": "entity" }
+  ],
+  "outputs": [{ "name": "connector", "type": "connector" }],
+  "showInContext": true,
+  "plugin": "FloatGoal"
+}

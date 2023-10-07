@@ -1,0 +1,13 @@
+{
+  "name": "On Register Goals",
+  "category": "Events",
+  "for": "mob",
+  "properties": [],
+  "inputs": [],
+  "outputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Mob <Entity>", "type": "entity" }
+  ],
+  "showInContext": false,
+  "plugin": "OnRegisterGoals"
+}
