@@ -5,7 +5,7 @@
   "inputs": [
     { "name": "connector", "type": "connector" },
     { "name": "Priority <Number>", "type": "number" },
-    { "name": "Mob <Entity>", "type": "entity" }
+    { "name": "Mob <Mob>", "type": "entity" }
   ],
   "outputs": [{ "name": "connector", "type": "connector" }],
   "showInContext": true,
