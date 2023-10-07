@@ -12,11 +12,11 @@ import net.minecraftforge.registries.RegistryObject;
 import software.bernie.geckolib.core.animation.AnimationState;
 
 public class OnAnimationInit_mob {
-    public static void execute(IEventBus bus, Node node, RegistryObject<Entity> entityObj) {
+    public static void execute(IEventBus bus, Node node, RegistryObject<EntityType> entityObj) {
         bus.addListener((event) ->{
             if(event instanceof CustomEvent.AnimationInit) {
-                Entity entity = entityObj.get();
-                if(!("entity." + Project.MODID + "." + ((CustomEvent.AnimationInit) event).getName()).equals(item.getName(new ItemStack(entity)).getString())) return;
+                EntityType entity = entityObj.get();
+                if(!("entity." + Project.MODID + "." + ((CustomEvent.AnimationInit) event).getName()).equals(entity.toString())) return;
                 AnimationState state = ((CustomEvent.AnimationInit) event).getAnimationState();
                 node.setOutputData("Mob <Entity>", entity);
                 node.setOutputData("State <AnimationState>", state);
