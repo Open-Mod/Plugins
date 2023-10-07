@@ -4,6 +4,7 @@ import dev.openmod.project.Project;
 import dev.openmod.project.custom.CustomEvent;
 import dev.openmod.project.util.Node;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 
