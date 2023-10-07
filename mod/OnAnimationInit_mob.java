@@ -15,7 +15,7 @@ public class OnAnimationInit_mob {
     public static void execute(IEventBus bus, Node node, RegistryObject<Entity> entityObj) {
         bus.addListener((event) ->{
             if(event instanceof CustomEvent.AnimationInit) {
-                Item entity = entityObj.get();
+                Entity entity = entityObj.get();
                 if(!("entity." + Project.MODID + "." + ((CustomEvent.AnimationInit) event).getName()).equals(item.getName(new ItemStack(entity)).getString())) return;
                 AnimationState state = ((CustomEvent.AnimationInit) event).getAnimationState();
                 node.setOutputData("Mob <Entity>", entity);
