@@ -2,6 +2,7 @@ package dev.openmod.plugins.mod;
 
 import dev.openmod.project.util.Node;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 
