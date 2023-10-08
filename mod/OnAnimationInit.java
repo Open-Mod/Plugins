@@ -16,7 +16,8 @@ public class OnAnimationInit {
         bus.addListener((event) ->{
             if(event instanceof CustomEvent.AnimationInit) {
                 Item item = itemObj.get();
-                if(!("item." + Project.MODID + "." + ((CustomEvent.AnimationInit) event).getName()).equals(item.getName(new ItemStack(item)).getString())) return;
+                Item result = (Item) ((CustomEvent.AnimationInit) event).get();
+                if(!result.getName(new ItemStack(result)).equals(item.getName(new ItemStack(item)))) return;
                 AnimationState state = ((CustomEvent.AnimationInit) event).getAnimationState();
                 node.setOutputData("Item <Item>", item);
                 node.setOutputData("State <AnimationState>", state);

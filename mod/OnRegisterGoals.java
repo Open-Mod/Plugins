@@ -13,9 +13,9 @@ public class OnRegisterGoals {
         bus.addListener((event) ->{
             if(event instanceof CustomEvent.MobGoalsInit) {
                 EntityType entity = entityObj.get();
-                if(!("entity." + Project.MODID + "." + ((CustomEvent.MobGoalsInit) event).getName()).equals(entity.toString())) return;
-                Mob mob = ((CustomEvent.MobGoalsInit) event).getMob();
-                node.setOutputData("Mob <Mob>", mob);
+                Mob result = ((CustomEvent.MobGoalsInit) event).get();
+                if(!result.getName().equals(entity.toString())) return;
+                node.setOutputData("Mob <Mob>", result);
                 node.TriggerNext("connector");
             }
         });

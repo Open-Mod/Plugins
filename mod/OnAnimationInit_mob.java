@@ -4,6 +4,7 @@ import dev.openmod.project.Project;
 import dev.openmod.project.custom.CustomEvent;
 import dev.openmod.project.util.Node;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Mob;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 import software.bernie.geckolib.core.animation.AnimationState;
@@ -13,9 +14,10 @@ public class OnAnimationInit_mob {
         bus.addListener((event) ->{
             if(event instanceof CustomEvent.AnimationInit) {
                 EntityType entity = entityObj.get();
-                if(!("entity." + Project.MODID + "." + ((CustomEvent.AnimationInit) event).getName()).equals(entity.toString())) return;
+                Mob result = (Mob) ((CustomEvent.AnimationInit) event).get();
+                if(!result.getName().equals(entity.toString())) return;
                 AnimationState state = ((CustomEvent.AnimationInit) event).getAnimationState();
-                node.setOutputData("Mob <EntityType>", entity);
+                node.setOutputData("Mob <Entity>", result);
                 node.setOutputData("State <AnimationState>", state);
                 node.TriggerNext("connector");
             }
