@@ -17,7 +17,7 @@ public class OnAnimationInit_mob {
                 Mob result = (Mob) ((CustomEvent.AnimationInit) event).get();
                 if(!result.getName().equals(entity.toString())) return;
                 AnimationState state = ((CustomEvent.AnimationInit) event).getAnimationState();
-                node.setOutputData("Mob <Entity>", result);
+                node.setOutputData("Mob <Mob>", result);
                 node.setOutputData("State <AnimationState>", state);
                 node.TriggerNext("connector");
             }
