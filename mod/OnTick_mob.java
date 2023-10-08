@@ -14,7 +14,7 @@ public class OnTick_mob {
             if(event instanceof CustomEvent.MobTick) {
                 EntityType entity = entityObj.get();
                 Mob result = ((CustomEvent.MobTick) event).get();
-                if(!result.getName().equals(entity.toString())) return;
+                if(!result.getName().getString().equals(entity.toString())) return;
                 node.setOutputData("Mob <Mob>", result);
                 node.TriggerNext("connector");
             }

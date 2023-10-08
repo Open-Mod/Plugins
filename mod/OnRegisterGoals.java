@@ -14,7 +14,7 @@ public class OnRegisterGoals {
             if(event instanceof CustomEvent.MobGoalsInit) {
                 EntityType entity = entityObj.get();
                 Mob result = ((CustomEvent.MobGoalsInit) event).get();
-                if(!result.getName().equals(entity.toString())) return;
+                if(!result.getName().getString().equals(entity.toString())) return;
                 node.setOutputData("Mob <Mob>", result);
                 node.TriggerNext("connector");
             }
