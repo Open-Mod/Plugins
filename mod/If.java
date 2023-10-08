@@ -11,9 +11,9 @@ public class If {
     public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
         java.lang.Boolean result = (java.lang.Boolean) node.getInputData("Condition <Boolean>");
         if (result) {
-            node.TriggerNext("true <Connector>");
+            node.TriggerNext("true");
         } else {
-            node.TriggerNext("false <Connector>");
+            node.TriggerNext("false");
         }
     }
 }

@@ -7,8 +7,8 @@
     { "name": "Condition <Boolean>", "type": "boolean" }
   ],
   "outputs": [
-    { "name": "true <Connector>", "type": "connector" },
-    { "name": "false <Connector>", "type": "connector" }
+    { "name": "true", "type": "connector" },
+    { "name": "false", "type": "connector" }
   ],
   "showInContext": true,
   "plugin": "If"
