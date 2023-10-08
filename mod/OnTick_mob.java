@@ -13,7 +13,7 @@ public class OnTick_mob {
         bus.addListener((event) ->{
             if(event instanceof CustomEvent.MobTick) {
                 EntityType entity = entityObj.get();
-                Mob result = ((CustomEvent.MobGoalsInit) event).get();
+                Mob result = ((CustomEvent.MobTick) event).get();
                 if(!result.getName().equals(entity.toString())) return;
                 node.setOutputData("Mob <Mob>", result);
                 node.TriggerNext("connector");
