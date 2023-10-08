@@ -13,7 +13,7 @@ public class OnServerAiStep_mob {
         bus.addListener((event) ->{
             if(event instanceof CustomEvent.MobServerAiStep) {
                 EntityType entity = entityObj.get();
-                Mob result = ((CustomEvent.MobGoalsInit) event).get();
+                Mob result = ((CustomEvent.MobServerAiStep) event).get();
                 if(!result.getName().equals(entity.toString())) return;
                 node.setOutputData("Mob <Mob>", result);
                 node.TriggerNext("connector");
