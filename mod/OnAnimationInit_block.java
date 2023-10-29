@@ -13,11 +13,11 @@ import software.bernie.geckolib.core.animation.AnimationState;
 public class OnAnimationInit_block {
     public static void execute(IEventBus bus, Node node, RegistryObject<Block> blockObj) {
         bus.addListener((event) ->{
-            if(event instanceof CustomEvent.AnimationInit) {
+            if(event instanceof CustomEvent.AnimationInit_block) {
                 Block block = blockObj.get();
-                Block result = (Block) ((CustomEvent.AnimationInit) event).get();
+                Block result = (Block) ((CustomEvent.AnimationInit_block) event).get();
                 if(!result.getName().equals(block.getName())) return;
-                AnimationState state = ((CustomEvent.AnimationInit) event).getAnimationState();
+                AnimationState state = ((CustomEvent.AnimationInit_block) event).getAnimationState();
                 node.setOutputData("Block <Block>", block);
                 node.setOutputData("State <AnimationState>", state);
                 node.TriggerNext("connector");

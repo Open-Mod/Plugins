@@ -12,11 +12,11 @@ import software.bernie.geckolib.core.animation.AnimationState;
 public class OnAnimationInit_mob {
     public static void execute(IEventBus bus, Node node, RegistryObject<EntityType> entityObj) {
         bus.addListener((event) ->{
-            if(event instanceof CustomEvent.AnimationInit) {
+            if(event instanceof CustomEvent.AnimationInit_mob) {
                 EntityType entity = entityObj.get();
-                Mob result = (Mob) ((CustomEvent.AnimationInit) event).get();
+                Mob result = (Mob) ((CustomEvent.AnimationInit_mob) event).get();
                 if(!result.getName().getString().equals(entity.toString())) return;
-                AnimationState state = ((CustomEvent.AnimationInit) event).getAnimationState();
+                AnimationState state = ((CustomEvent.AnimationInit_mob) event).getAnimationState();
                 node.setOutputData("Mob <Mob>", result);
                 node.setOutputData("State <AnimationState>", state);
                 node.TriggerNext("connector");
