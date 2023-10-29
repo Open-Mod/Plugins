@@ -7,14 +7,11 @@ import net.minecraft.world.entity.Mob;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.Map;
-
 public class TargetNearestEntityGoal {
     public static void execute(IEventBus bus, Node node, RegistryObject<EntityType> entityObj) {
-        Map properties = (Map) node.data.get("properties");
         Mob mob = (Mob) node.getInputData("Mob <Mob>");
         int priority = ((java.lang.Number) node.getInputData("Priority <Number>")).intValue();
-        (java.lang.String) type = (java.lang.String) node.getInputData("Type <String>");
+        java.lang.String type = (java.lang.String) node.getInputData("Type <String>");
         boolean mustSee = (boolean) node.getInputData("Must See? <Boolean>");
         boolean mustReach = (boolean) node.getInputData("Must Reach? <Boolean>");
         mob.targetSelector.addGoal(priority, new net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal<>(mob, LivingEntity.class, 10, mustSee, mustReach, e -> e.getType().toString().toLowerCase().contains(type.toLowerCase())));

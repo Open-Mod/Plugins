@@ -6,11 +6,8 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.Map;
-
 public class Explode {
     public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
-        Map properties = (Map) node.data.get("properties");
         Level level = (Level) node.getInputData("Level <Level>");
         if(level.isClientSide()) return;
         double X = ((java.lang.Number) node.getInputData("X <Number>")).doubleValue();

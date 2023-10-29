@@ -6,11 +6,8 @@ import net.minecraft.world.entity.Mob;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.Map;
-
 public class FloatGoal {
     public static void execute(IEventBus bus, Node node, RegistryObject<EntityType> entityObj) {
-        Map properties = (Map) node.data.get("properties");
         Mob mob = (Mob) node.getInputData("Mob <Mob>");
         int priority = ((java.lang.Number) node.getInputData("Priority <Number>")).intValue();
         mob.goalSelector.addGoal(priority, new net.minecraft.world.entity.ai.goal.FloatGoal(mob));
