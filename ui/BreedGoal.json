@@ -1,0 +1,14 @@
+{
+  "name": "Breed Goal",
+  "category": "Mob Goals",
+  "properties": [],
+  "inputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Mob <Mob>", "type": "entity" },
+    { "name": "Priority <Number>", "type": "number" },
+    { "name": "Movement Speed <Number>", "type": "number" }
+  ],
+  "outputs": [{ "name": "connector", "type": "connector" }],
+  "showInContext": true,
+  "plugin": "BreedGoal"
+}
