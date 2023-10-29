@@ -1,0 +1,13 @@
+{
+  "name": "Random Look Around Goal",
+  "category": "Mob Goals",
+  "properties": [],
+  "inputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Mob <Mob>", "type": "entity" },
+    { "name": "Priority <Number>", "type": "number" }
+  ],
+  "outputs": [{ "name": "connector", "type": "connector" }],
+  "showInContext": true,
+  "plugin": "RandomLookAroundGoal"
+}

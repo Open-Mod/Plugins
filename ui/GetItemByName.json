@@ -1,0 +1,9 @@
+{
+  "name": "Get Item By Name",
+  "category": "Variables",
+  "properties": [],
+  "inputs": [{ "name": "Name <String>", "type": "string" }],
+  "outputs": [{ "name": "Item <Item>", "type": "item" }],
+  "showInContext": true,
+  "plugin": "GetItemByName"
+}

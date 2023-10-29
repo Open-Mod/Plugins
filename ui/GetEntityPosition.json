@@ -4,9 +4,9 @@
   "properties": [],
   "inputs": [{ "name": "Entity <Entity>", "type": "entity" }],
   "outputs": [
-    { "name": "X <Number>", "type": "Number" },
-    { "name": "Y <Number>", "type": "Number" },
-    { "name": "Z <Number>", "type": "Number" }
+    { "name": "X <Number>", "type": "number" },
+    { "name": "Y <Number>", "type": "number" },
+    { "name": "Z <Number>", "type": "number" }
   ],
   "showInContext": true,
   "plugin": "GetEntityPosition"
