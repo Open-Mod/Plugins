@@ -1,0 +1,16 @@
+{
+  "name": "Target Nearest Entity Goal",
+  "category": "Mob Goals",
+  "properties": [],
+  "inputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Mob <Mob>", "type": "entity" },
+    { "name": "Priority <Number>", "type": "number" },
+    { "name": "Type <String>", "type": "string" },
+    { "name": "Must See? <Boolean>", "type": "boolean" },
+    { "name": "Must Reach? <Boolean>", "type": "boolean" }
+  ],
+  "outputs": [{ "name": "connector", "type": "connector" }],
+  "showInContext": true,
+  "plugin": "TargetNearestEntityGoal"
+}
