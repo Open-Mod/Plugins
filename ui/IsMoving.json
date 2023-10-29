@@ -1,0 +1,11 @@
+{
+  "name": "Is Moving",
+  "category": "Variables",
+  "properties": [],
+  "inputs": [
+    { "name": "Animation State <AnimationState>", "type": "animationstate" }
+  ],
+  "outputs": [{ "name": "Is Moving? <Boolean>", "type": "boolean" }],
+  "showInContext": true,
+  "plugin": "IsMoving"
+}
