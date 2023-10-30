@@ -6,6 +6,7 @@ import dev.openmod.project.util.Node;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
@@ -21,6 +22,7 @@ public class OnInteract_mob {
                 InteractionHand hand = ((CustomEvent.MobInteract) event).getHand();
                 if(!result.getName().getString().equals(entity.toString())) return;
                 node.setOutputData("Mob <Mob>", result);
+                node.setOutputData("Player <Player>", player);
                 node.setOutputData("X <Number>", pos.x);
                 node.setOutputData("Y <Number>", pos.y);
                 node.setOutputData("Z <Number>", pos.z);
