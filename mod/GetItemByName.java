@@ -15,7 +15,7 @@ public class GetItemByName {
         if(name == null) return;
         Item item = null;
         for(RegistryObject<Item> itemEntry : ItemInit.ITEMS.getEntries()) {
-            if((Project.MODID + ":" + name).equals(itemEntry.getKey().location().getPath())) {
+            if(name.equals(itemEntry.getKey().location().getPath())) {
                 item = itemEntry.get();
                 break;
             }
