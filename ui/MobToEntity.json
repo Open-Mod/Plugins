@@ -1,0 +1,9 @@
+{
+  "name": "Mob To Entity",
+  "category": "Variables",
+  "properties": [],
+  "inputs": [{ "name": "Mob <Mob>", "type": "mob" }],
+  "outputs": [{ "name": "Entity <Entity>", "type": "entity" }],
+  "showInContext": true,
+  "plugin": "MobToEntity"
+}

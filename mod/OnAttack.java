@@ -19,7 +19,7 @@ public class OnAttack {
                 Entity entity = ((AttackEntityEvent) event).getTarget();
                 node.setOutputData("Tool <Item>", item);
                 node.setOutputData("Level <Level>", player.getCommandSenderWorld());
-                node.setOutputData("Player <Entity>", player);
+                node.setOutputData("Player <Player>", player);
                 node.setOutputData("Entity <Entity>", entity);
                 node.TriggerNext("connector");
             }

@@ -11,7 +11,7 @@
   ],
   "inputs": [
     { "name": "connector", "type": "connector" },
-    { "name": "Mob <Mob>", "type": "entity" }
+    { "name": "Mob <Mob>", "type": "mob" }
   ],
   "outputs": [{ "name": "connector", "type": "connector" }],
   "showInContext": true,

@@ -1,18 +1,18 @@
 {
-  "name": "On Break",
+  "name": "On Interact",
   "category": "Events",
-  "for": "block",
+  "for": "mob",
   "properties": [],
   "inputs": [],
   "outputs": [
     { "name": "connector", "type": "connector" },
-    { "name": "Block <Block>", "type": "block" },
-    { "name": "Level <Level>", "type": "level" },
+    { "name": "Mob <Mob>", "type": "mob" },
     { "name": "Player <Player>", "type": "player" },
     { "name": "X <Number>", "type": "number" },
     { "name": "Y <Number>", "type": "number" },
-    { "name": "Z <Number>", "type": "number" }
+    { "name": "Z <Number>", "type": "number" },
+    { "name": "Interaction Hand <InteractionHand>", "type": "interactionhand" }
   ],
   "showInContext": false,
-  "plugin": "OnBreak"
+  "plugin": "OnInteract_mob"
 }

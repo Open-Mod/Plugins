@@ -17,7 +17,7 @@ public class OnBreak {
                 if(!block.getName().getString().equals(name)) return;
                 node.setOutputData("Block <Block>", block);
                 node.setOutputData("Level <Level>", ev.getPlayer().getCommandSenderWorld());
-                node.setOutputData("Player <Entity>", ev.getPlayer());
+                node.setOutputData("Player <Player>", ev.getPlayer());
                 node.setOutputData("X <Number>", ev.getPos().getX());
                 node.setOutputData("Y <Number>", ev.getPos().getY());
                 node.setOutputData("Z <Number>", ev.getPos().getZ());

@@ -8,7 +8,7 @@
     { "name": "connector", "type": "connector" },
     { "name": "Item <Item>", "type": "item" },
     { "name": "Level <Level>", "type": "level" },
-    { "name": "Player <Entity>", "type": "entity" }
+    { "name": "Player <Player>", "type": "player" }
   ],
   "showInContext": false,
   "plugin": "OnConsume"

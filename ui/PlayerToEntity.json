@@ -1,0 +1,9 @@
+{
+  "name": "Player To Entity",
+  "category": "Variables",
+  "properties": [],
+  "inputs": [{ "name": "Player <Player>", "type": "player" }],
+  "outputs": [{ "name": "Entity <Entity>", "type": "entity" }],
+  "showInContext": true,
+  "plugin": "PlayerToEntity"
+}

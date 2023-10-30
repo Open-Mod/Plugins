@@ -8,7 +8,7 @@
     { "name": "connector", "type": "connector" },
     { "name": "Tool <Item>", "type": "item" },
     { "name": "Level <Level>", "type": "level" },
-    { "name": "Player <Entity>", "type": "entity" },
+    { "name": "Player <Player>", "type": "player" },
     { "name": "Entity <Entity>", "type": "entity" }
   ],
   "showInContext": false,

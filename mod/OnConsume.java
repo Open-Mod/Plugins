@@ -17,7 +17,7 @@ public class OnConsume {
                 Entity player = ((LivingEntityUseItemEvent) event).getEntity();
                 node.setOutputData("Item <Item>", item);
                 node.setOutputData("Level <Level>", player.getCommandSenderWorld());
-                node.setOutputData("Player <Entity>", player);
+                node.setOutputData("Player <Player>", player);
                 node.TriggerNext("connector");
             }
         });
