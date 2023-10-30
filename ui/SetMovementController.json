@@ -1,0 +1,19 @@
+{
+  "name": "Set Movement Controller",
+  "category": "Mob Behaviour",
+  "properties": [
+    {
+      "name": "Controller",
+      "type": "combo",
+      "values": ["Walking", "Flying"],
+      "value": "Walking"
+    }
+  ],
+  "inputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Mob <Mob>", "type": "entity" }
+  ],
+  "outputs": [{ "name": "connector", "type": "connector" }],
+  "showInContext": true,
+  "plugin": "SetMovementController"
+}
