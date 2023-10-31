@@ -1,0 +1,14 @@
+{
+  "name": "On Mount",
+  "category": "Events",
+  "for": "mob",
+  "properties": [],
+  "inputs": [],
+  "outputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Target <Entity>", "type": "entity" },
+    { "name": "Entity <Entity>", "type": "entity" }
+  ],
+  "showInContext": false,
+  "plugin": "OnMount"
+}
