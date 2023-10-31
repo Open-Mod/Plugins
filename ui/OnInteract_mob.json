@@ -8,9 +8,6 @@
     { "name": "connector", "type": "connector" },
     { "name": "Mob <Mob>", "type": "mob" },
     { "name": "Player <Player>", "type": "player" },
-    { "name": "X <Number>", "type": "number" },
-    { "name": "Y <Number>", "type": "number" },
-    { "name": "Z <Number>", "type": "number" },
     { "name": "Interaction Hand <InteractionHand>", "type": "interactionhand" }
   ],
   "showInContext": false,
