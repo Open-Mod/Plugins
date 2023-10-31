@@ -22,7 +22,7 @@ public class OnDismount {
                     EntityType entity = entityObj.get();
                     Entity result = ((EntityMountEvent) event).getEntityBeingMounted();
                     Entity mounter = ((EntityMountEvent) event).getEntityMounting();
-                    if(!result.level().getEntity(result.getId()).getType().equals(entity)) return;
+                    if(result.level().getEntity(result.getId()) == null || !result.level().getEntity(result.getId()).getType().equals(entity)) return;
                     CustomMob mob = (CustomMob) result.level().getEntity(result.getId());
                     Player player = (Player) result.level().getEntity(mounter.getId());
                     if (!result.getName().getString().equals(entity.toString())) return;
