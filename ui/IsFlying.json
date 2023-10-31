@@ -1,0 +1,9 @@
+{
+  "name": "Is Flying",
+  "category": "Variables",
+  "properties": [],
+  "inputs": [{ "name": "Mob <Mob>", "type": "Mob" }],
+  "outputs": [{ "name": "Is Flying? <Boolean>", "type": "boolean" }],
+  "showInContext": true,
+  "plugin": "IsFlying"
+}
