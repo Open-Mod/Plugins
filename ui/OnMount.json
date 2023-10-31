@@ -6,8 +6,8 @@
   "inputs": [],
   "outputs": [
     { "name": "connector", "type": "connector" },
-    { "name": "Target <Entity>", "type": "entity" },
-    { "name": "Entity <Entity>", "type": "entity" }
+    { "name": "Mob <Mob>", "type": "mob" },
+    { "name": "Player <Player>", "type": "player" }
   ],
   "showInContext": false,
   "plugin": "OnMount"
