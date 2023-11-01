@@ -6,7 +6,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 
-public class IsMounted {
+public class isMounted {
     public static void execute(IEventBus bus, Node node, RegistryObject itemObj) {
         Entity entity = (Entity) node.getInputData("Entity <Entity>");
         if(entity == null) return;
