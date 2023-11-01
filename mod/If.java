@@ -8,6 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class If {
     public static void execute(IEventBus bus, Node node, RegistryObject<Item> itemObj) {
         java.lang.Boolean result = (java.lang.Boolean) node.getInputData("Condition <Boolean>");
+        if(result == null) return;
         if (result) {
             node.TriggerNext("true");
         } else {
