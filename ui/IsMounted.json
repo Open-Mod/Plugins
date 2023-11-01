@@ -5,5 +5,5 @@
   "inputs": [{ "name": "Entity <Entity>", "type": "entity" }],
   "outputs": [{ "name": "Is Mounted? <Boolean>", "type": "boolean" }],
   "showInContext": true,
-  "plugin": "IsMounted"
+  "plugin": "isMounted"
 }
