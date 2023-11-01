@@ -11,6 +11,6 @@ public class IsFlying {
     public static void execute(IEventBus bus, Node node, RegistryObject itemObj) {
         Mob mob = (Mob) node.getInputData("Mob <Mob>");
         if(mob == null) return;
-        node.setOutputData("Is Flying? <Boolean>", mob.level().getBlockState(new BlockPos((int) this.getX(), (int) this.getY() - 1, (int) this.getZ())).isAir());
+        node.setOutputData("Is Flying? <Boolean>", mob.level().getBlockState(new BlockPos((int) mob.getX(), (int) mob.getY() - 1, (int) mob.getZ())).isAir());
     }
 }
