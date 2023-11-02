@@ -1,0 +1,20 @@
+{
+  "name": "Set Variable",
+  "category": "Variables",
+  "properties": [
+    {
+      "name": "Scope",
+      "type": "combo",
+      "values": ["Local", "Global"],
+      "value": "Local"
+    }
+  ],
+  "inputs": [
+    { "name": "connector", "type": "connector" },
+    { "name": "Name <String>", "type": "string" },
+    { "name": "Value", "type": "any" }
+  ],
+  "outputs": [{ "name": "connector", "type": "connector" }],
+  "showInContext": true,
+  "plugin": "SetVariable"
+}

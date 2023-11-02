@@ -1,0 +1,16 @@
+{
+  "name": "Get Variable",
+  "category": "Variables",
+  "properties": [
+    {
+      "name": "Scope",
+      "type": "combo",
+      "values": ["Local", "Global"],
+      "value": "Local"
+    }
+  ],
+  "inputs": [{ "name": "Name <String>", "type": "string" }],
+  "outputs": [{ "name": "Value", "type": "any" }],
+  "showInContext": true,
+  "plugin": "GetVariable"
+}
