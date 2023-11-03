@@ -1,0 +1,31 @@
+{
+  "name": "For",
+  "category": "Loops",
+  "properties": [],
+  "inputs": [
+    {
+      "name": "connector",
+      "type": "connector"
+    },
+    {
+      "name": "First <Number>",
+      "type": "number"
+    },
+	{
+      "name": "Last <Number>",
+      "type": "number"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "exit",
+      "type": "connector"
+    },
+    {
+      "name": "body",
+      "type": "connector"
+    }
+  ],
+  "showInContext": true,
+  "plugin": "For"
+}
